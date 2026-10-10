@@ -15,12 +15,12 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Pindo 拼豆图纸生成器",
+  title: "爱可拼豆图纸生成器",
   description: "本地拼豆图纸生成器。上传图片，选择品牌、颜色筛选、尺寸和创作模式，导出带色号与用量统计的拼豆图纸。",
   keywords: "拼豆,图纸生成器,perler beads,hama beads,artkal beads,pixel art,bead pattern,拼豆图纸,像素画",
   manifest: "/manifest.json",
   openGraph: {
-    title: "Pindo 拼豆图纸生成器",
+    title: "爱可拼豆图纸生成器",
     description: "上传图片生成带色号和用量统计的拼豆图纸。",
     type: "website",
   },

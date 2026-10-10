@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 
 const appDir = dirname(fileURLToPath(import.meta.url));
 const root = resolve(appDir, 'out');
-const preferredPort = Number(process.env.PORT || 3000);
+const preferredPort = Number(process.env.PORT || 2000);
 
 const mime = {
   '.css': 'text/css; charset=utf-8',

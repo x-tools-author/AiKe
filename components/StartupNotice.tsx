@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 export default function StartupNotice() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [secondsLeft, setSecondsLeft] = useState(3);
 
   useEffect(() => {
@@ -29,11 +29,10 @@ export default function StartupNotice() {
           type="button"
           disabled={secondsLeft > 0}
           onClick={() => setVisible(false)}
-          className={`mt-6 w-full rounded-full px-5 py-3 text-sm font-semibold transition ${
-            secondsLeft > 0
+          className={`mt-6 w-full rounded-full px-5 py-3 text-sm font-semibold transition ${secondsLeft > 0
               ? 'cursor-not-allowed bg-gray-200 text-gray-500'
               : 'bg-pink-500 text-white shadow-lg shadow-pink-200 hover:bg-pink-600'
-          }`}
+            }`}
         >
           {secondsLeft > 0 ? `${secondsLeft}s 后可确认` : '确认进入'}
         </button>

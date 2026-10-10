@@ -30,7 +30,7 @@ function WorkModeSelector({ workMode, onChange }: { workMode: WorkMode; onChange
   const offset = workMode === 'generate' ? 'translate-x-0' : workMode === 'recognize' ? 'translate-x-full' : 'translate-x-[200%]';
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+    <div className="hidden rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
       <div className="mb-3 text-sm font-semibold text-gray-700">工作模式</div>
       <div className="relative grid grid-cols-3 rounded-full bg-gray-100 p-1 text-sm font-medium">
         <span className={`absolute bottom-1 left-1 top-1 w-[calc(33.333%-0.25rem)] rounded-full bg-emerald-500 shadow transition-transform ${offset}`} />
@@ -414,9 +414,9 @@ export default function Home() {
       <div className="mx-auto max-w-[1500px] px-5 py-5">
         <header className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-gray-200 pb-4">
           <div>
-            <h1 className="text-2xl font-bold tracking-tight">Pindo 拼豆图纸生成器</h1>
-            <p className="mt-1 text-sm text-gray-500">上传图片生成图纸，或识别已有无色号拼豆图纸并补全网格、色号和用量统计。</p>
-            <div className="mt-3 space-y-1 text-sm font-medium text-pink-600">
+            <h1 className="text-2xl font-bold tracking-tight">爱可拼豆图纸生成器</h1>
+            <p className="mt-1 text-sm text-gray-500">上传图片生成图纸并补全网格、色号和用量统计。</p>
+            <div className="mt-3 space-y-1 text-sm font-medium text-pink-600 hidden">
               <p>本软件由金毛狗妹饲养员免费提供</p>
               <p>作者QQ：3415388638</p>
             </div>
