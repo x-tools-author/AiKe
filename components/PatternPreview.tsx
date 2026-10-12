@@ -236,10 +236,10 @@ export default function PatternPreview({ pattern, palette, onCellClick, highligh
   return (
     <div className="space-y-3 p-4">
       <div className="flex items-center gap-2 flex-wrap">
-        <button onClick={() => setZoom(z => Math.max(0.1, +(z - 0.25).toFixed(2)))}
+        <button onClick={() => setZoom(z => Math.max(0.1, +(z - 0.10).toFixed(2)))}
           className={`${btn} bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700`}>−</button>
         <span className="text-sm text-gray-500 dark:text-gray-400 font-mono min-w-[3rem] text-center">{Math.round(zoom * 100)}%</span>
-        <button onClick={() => setZoom(z => Math.min(5, +(z + 0.25).toFixed(2)))}
+        <button onClick={() => setZoom(z => Math.min(5, +(z + 0.10).toFixed(2)))}
           className={`${btn} bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700`}>+</button>
         <div className="w-px h-5 bg-gray-300 dark:bg-gray-700 mx-1" />
         <button onClick={() => setShowGrid(g => !g)}
