@@ -272,12 +272,12 @@ export default function ImageUploader({ onImageSelected }: Props) {
           }}
           onClick={openPicker}
         >
-          <div className="relative group shrink-0">
+          <div className="relative group shrink-0 flex items-center justify-center overflow-hidden rounded-2xl bg-white/70 ring-2 ring-pink-200 dark:ring-pink-800">
             <img src={preview} alt="Preview"
               draggable={false}
               onDragOver={e => { e.preventDefault(); e.stopPropagation(); }}
               onDrop={e => { e.preventDefault(); e.stopPropagation(); if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]); }}
-              className="w-full sm:w-72 h-52 object-cover rounded-2xl shadow-md ring-2 ring-pink-200 dark:ring-pink-800 pointer-events-none" />
+              className="w-full sm:w-72 h-52 object-contain rounded-2xl shadow-md pointer-events-none" />
             <div className="absolute inset-0 bg-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl flex items-center justify-center backdrop-blur-sm">
               <Button variant="secondary" size="sm" onClick={(e) => { e.stopPropagation(); openPicker(); }} className="rounded-full px-4">
                 ✨ {t('upload.change')}
