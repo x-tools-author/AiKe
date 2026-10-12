@@ -411,9 +411,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f4ee] text-gray-900">
       <StartupNotice />
-      <div className="mx-auto max-w-[1500px] px-5 py-5">
-        <header className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-gray-200 pb-4">
-          <div>
+      <div className="mx-auto max-w-[1500px] px-5 pt-2 pb-5">
+        <header className="hidden mb-5 flex flex-wrap items-center justify-between gap-3 pb-4">
+          <div className="hidden">
             <h1 className="text-2xl font-bold tracking-tight">爱可拼豆图纸生成器</h1>
             <p className="mt-1 text-sm text-gray-500">上传图片生成图纸并补全网格、色号和用量统计。</p>
             <div className="mt-3 space-y-1 text-sm font-medium text-pink-600 hidden">
